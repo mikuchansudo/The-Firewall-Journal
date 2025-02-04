@@ -1,55 +1,39 @@
+/* Hacker Green Theme */
 body {
     background-color: black;
-    color: #00ff00; /* Neon Green */
-    font-family: 'Courier New', monospace;
-    padding: 20px;
-}
-
-h1, h2, h3 {
     color: #00ff00;
-    text-shadow: 0 0 5px #00ff00;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-a {
+/* Terminal Message */
+.terminal {
+    background: black;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Blog List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+ul li a {
     color: #00ff00;
     text-decoration: none;
 }
 
-a:hover {
-    color: #33ff33;
-    text-shadow: 0 0 10px #33ff33;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #00ff00;
-}
-
-code {
-    background-color: black;
-    color: #00ff00;
-    padding: 3px;
-}
-
-.navbar {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #00ff00;
-}
-
-.navbar a {
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    border-top: 2px solid #00ff00;
+ul li a:hover {
+    text-decoration: underline;
 }
