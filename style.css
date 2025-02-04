@@ -92,3 +92,22 @@ a:hover {
     text-decoration: underline; /* Optional: Add underline on hover */
     color: #00cc00; /* Slightly different green */
 }
+
+/* Force Blog Heading Styling */
+h2 a, h2 a:visited {
+    color: #00ff00 !important; /* Neon green */
+    text-decoration: none !important; /* Remove underline */
+    font-weight: bold !important;
+}
+
+/* Force Remove Blue Color & Underline from All Links */
+a, a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Subtle Hover Effect */
+a:hover {
+    text-decoration: underline !important; /* Optional: Add underline on hover */
+    color: #00cc00 !important; /* Slightly different green */
+}
