@@ -73,3 +73,22 @@ nav ul li a {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Blog Heading Styling */
+h2 a {
+    color: #00ff00 !important; /* Neon green color */
+    text-decoration: none !important; /* Remove underline */
+    font-weight: bold;
+}
+
+/* Remove default blue color from all links */
+a {
+    color: inherit !important; /* Inherit color from parent element */
+    text-decoration: none !important;
+}
+
+/* Ensure hover effect is subtle */
+a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+    color: #00cc00; /* Slightly different green */
+}
