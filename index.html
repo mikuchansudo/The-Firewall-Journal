@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <canvas id="matrixCanvas"></canvas> <!-- Matrix Effect Background -->
+    
     <header>
         <h1>The Firewall Journal</h1>
         <nav>
@@ -18,25 +20,22 @@
         </nav>
     </header>
 
-    <!-- Blogs Section (Moved to the Top) -->
-    <section id="blogs">
-        <h2>Blogs</h2>
-        <ul>
-            <li><a href="posts/log0.html">Log0 - The Hacker's Perspective</a></li>
-            <li><a href="posts/dark-web.html">Dark Web - Myths vs Reality</a></li>
-        </ul>
-    </section>
+    <!-- Main Content (Now with Background Blur for Readability) -->
+    <div class="content">
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <ul>
+                <li><a href="posts/log0.html">Log0 - The Hacker's Perspective</a></li>
+                <li><a href="posts/dark-web.html">Dark Web - Myths vs Reality</a></li>
+            </ul>
+        </section>
 
-    <!-- Shortened Matrix Effect -->
-    <section id="matrix-effect">
-        <canvas id="matrixCanvas"></canvas>
-    </section>
-
-    <!-- Cyber Threat Map (Fortinet) -->
-    <section id="cyber-threat-map">
-        <h2>Real-Time Cyber Threats</h2>
-        <iframe src="https://threatmap.fortiguard.com/" width="100%" height="400px" style="border: none;"></iframe>
-    </section>
+        <!-- Cyber Threat Map (Fortinet) -->
+        <section id="cyber-threat-map">
+            <h2>Real-Time Cyber Threats</h2>
+            <iframe src="https://threatmap.fortiguard.com/" width="100%" height="400px" style="border: none;"></iframe>
+        </section>
+    </div>
 
     <script src="matrix.js"></script>
 </body>
