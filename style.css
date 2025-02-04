@@ -1,39 +1,75 @@
-/* Hacker Green Theme */
+/* Full Page Styling */
 body {
-    background-color: black;
-    color: #00ff00;
-    font-family: 'Courier New', monospace;
-    text-align: center;
     margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background: black;
+    color: #00ff00; /* Hacker Green */
+    overflow-x: hidden;
+}
+
+/* Matrix Canvas at the Top */
+#matrixCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px; /* Reduced size */
+    z-index: 1;
+}
+
+/* Main Content Styling */
+.content {
+    position: relative;
+    z-index: 2;
+    background: black;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Terminal Message */
-.terminal {
-    background: black;
-    padding: 15px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 18px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: bold;
 }
 
 /* Blog List */
-ul {
-    list-style-type: none;
+#blogs ul {
+    list-style: none;
     padding: 0;
 }
 
-ul li {
-    padding: 10px;
-    font-size: 20px;
+#blogs ul li {
+    margin: 10px 0;
 }
 
-ul li a {
+#blogs ul li a {
     color: #00ff00;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+/* Cyber Threat Map */
+#cyber-threat-map {
+    text-align: center;
+    margin-top: 20px;
 }
