@@ -4,25 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Firewall Journal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <header>
-        <h1>The Firewall Journal</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="posts/first-post.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h2>Latest Blog Post</h2>
-        <article>
-            <h3><a href="posts/first-post.html">The Hacker’s Philosophy: A New Perspective</a></h3>
-            <p>What if hacking wasn’t about breaking systems, but understanding them? Explore a new philosophy...</p>
-        </article>
-    </main>
+    <!-- Matrix Background Effect -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Hacker Terminal Welcome Message -->
+    <div class="terminal">
+        <p class="terminal-text"></p>
+    </div>
+
+    <!-- Live Cyber Threat Map -->
+    <h2>Real-Time Cyber Attacks</h2>
+    <iframe src="https://cybermap.kaspersky.com/" width="100%" height="400px" style="border: none;"></iframe>
+
+    <!-- Blog Posts Section -->
+    <h2>Blogs</h2>
+    <ul>
+        <li><a href="posts/log0.html">Log0 - The Hacker’s Mindset</a></li>
+    </ul>
+
+    <script>
+        // Typing Terminal Effect
+        const text = "Initializing...\nAccessing The Firewall Journal...\nWelcome, Operator.";
+        let index = 0;
+        function type() {
+            if (index < text.length) {
+                document.querySelector(".terminal-text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 50);
+            }
+        }
+        window.onload = type;
+
+        // Matrix Rain Effect
+        const canvas = document.getElementById("matrix");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const letters = "010101110011100110101010";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#00ff00";
+            ctx.font = fontSize + "px monospace";
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters.charAt(Math.floor(Math.random() * letters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 50);
+    </script>
+
 </body>
 </html>
