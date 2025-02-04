@@ -111,3 +111,34 @@ a:hover {
     text-decoration: underline !important; /* Optional: Add underline on hover */
     color: #00cc00 !important; /* Slightly different green */
 }
+
+/* Force Blog Heading to Green and Remove Underline */
+h2 a, h2 a:visited, h1 a, h1 a:visited {
+    color: #00ff00 !important; /* Hacker green */
+    text-decoration: none !important; /* Remove underline */
+    font-weight: bold !important;
+}
+
+/* Remove Default Blue from All Links */
+a, a:visited {
+    color: #00ff00 !important; /* Ensure links inherit hacker green */
+    text-decoration: none !important;
+}
+
+/* Subtle Hover Effect */
+a:hover {
+    text-decoration: underline !important;
+    color: #00cc00 !important; /* Slightly different green */
+}
+
+/* If Wrapped Inside Another Container, Force Apply */
+.blog-title a, .blog-title a:visited {
+    color: #00ff00 !important;
+    text-decoration: none !important;
+}
+
+/* More Specific Targeting if It’s Inside a Div */
+div h2 a, div h1 a {
+    color: #00ff00 !important;
+    text-decoration: none !important;
+}
