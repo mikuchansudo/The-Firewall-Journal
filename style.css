@@ -142,3 +142,37 @@ div h2 a, div h1 a {
     color: #00ff00 !important;
     text-decoration: none !important;
 }
+
+.hacker-theme {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.quote {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.tribute {
+    margin-top: 20px;
+}
+
+.mitnick-img {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+}
+
+.tribute-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
