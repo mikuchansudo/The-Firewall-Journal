@@ -22,16 +22,29 @@
         </nav>
     </header>
 
-    <section id="cyber-threat-map">
-        <h2>Real-Time Cyber Threat Map</h2>
-        <p>Track live cyber threats happening around the world.</p>
-        <iframe src="https://cybermap.kaspersky.com/en/widget/dark" 
-                width="100%" 
-                height="600px" 
-                frameborder="0" 
-                scrolling="no">
-        </iframe>
-    </section>
+    <div class="threat-maps-container">
+        <section id="radware-threat-map-1">
+            <h2>Radware Live Threat Map</h2>
+            <p>Track live cyber threats happening around the world.</p>
+            <iframe src="http://livethreatmap.radware.com/" 
+                    width="100%" 
+                    height="600px" 
+                    frameborder="0" 
+                    scrolling="no">
+            </iframe>
+        </section>
+
+        <section id="radware-threat-map-2">
+            <h2>Radware Live Threat Map (Alternative View)</h2>
+            <p>Monitor real-time cyber attacks with Radware's threat visualization.</p>
+            <iframe src="http://livethreatmap.radware.com/" 
+                    width="100%" 
+                    height="600px" 
+                    frameborder="0" 
+                    scrolling="no">
+            </iframe>
+        </section>
+    </div>
 
     <script src="matrix.js"></script>
 </body>
